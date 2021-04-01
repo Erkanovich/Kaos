@@ -46,7 +46,7 @@ namespace Kaos
             modelBuilder
                 .Entity<Brand>()
                 .Property(x => x.Id)
-                .UseIdentityColumn(10,10)
+                .UseIdentityColumn(10, 10)
                 .IsRequired();
 
             modelBuilder

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Kaos.Migrations
 {
     [DbContext(typeof(BeerDbContext))]
-    [Migration("20210401081027_InitialCreate")]
+    [Migration("20210401093817_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
