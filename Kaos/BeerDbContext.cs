@@ -10,7 +10,7 @@ namespace Kaos
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=BeerDb;Trusted_Connection=False;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=BeerDb;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace Kaos
             modelBuilder
                 .Entity<Beer>()
                 .HasOne(b => b.Brand)
-                .WithOne(br => br.Beers);
+                .WithMany(br => br.Beers);
 
             modelBuilder
                 .Entity<Brand>()

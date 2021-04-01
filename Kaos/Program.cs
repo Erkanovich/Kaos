@@ -12,7 +12,7 @@ namespace Kaos
             Console.WriteLine("1: Add beer");
             Console.WriteLine("2: Add beer brand");
             Console.WriteLine("3: Show all beers");
-            Console.WriteLine("3: Show all beers");
+            Console.WriteLine("4: Show all brands");
             var userChoice = Console.ReadLine();
             switch (userChoice)
             {
@@ -33,22 +33,22 @@ namespace Kaos
             }
         }
 
-        private void AddBeer()
+        private static void AddBeer()
         {
             throw new NotImplementedException();
         }
 
-        private void AddBeerBrand()
+        private static void AddBeerBrand()
         {
             throw new NotImplementedException();
         }
 
-        private void ShowAllBeers()
+        private static void ShowAllBeers()
         {
             throw new NotImplementedException();
         }
 
-        private void ShowAllBrands()
+        private static void ShowAllBrands()
         {
             throw new NotImplementedException();
         }
